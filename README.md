@@ -6,7 +6,8 @@ Emese aims to help you initialize and load large Node.js projects.
 
 ```javascript
 var api = {
-    version: '0.0.1'
+    version: '0.0.1',
+    log: log
 };
 
 var loader = new Emese(api);
@@ -38,13 +39,14 @@ loader.addTask([
         }, 200);
     },
     function (next) {
-        log('Creating HTTP server');
-        setTimeout(function () {
-            log('HTTP server listening');
-            next();
-        }, 100);
+        api.plugin.server.load(next);
     }
 ]);
+
+loader.resources({
+    public: 'test/public/**/*.json'
+});
+
 
 loader.load();
 
