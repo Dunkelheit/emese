@@ -1,6 +1,6 @@
 {
   "name": "emese",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Emese aims to help you initialize and load large Node.js projects",
   "main": "lib/emese.js",
   "scripts": {
