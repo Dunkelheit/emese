@@ -15,8 +15,9 @@ var loader = new Emese(api);
 
 loader.resources({
     client: {
-        rest: 'example/client/rest/*.js',
-        soap: 'example/client/soap/*.js'
+        _: 'example/client/*.js',
+        service1: 'example/client/service1/*.js',
+        service2: 'example/client/service2/*.js'
     },
     common: 'example/common/*.js',
     plugin: 'example/plugin/*.js',
