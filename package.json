@@ -31,6 +31,8 @@
     "gulp-benchmark": "^1.1.1",
     "gulp-jshint": "^1.12.0",
     "gulp-mocha": "^2.1.3",
+    "gulp-shell": "^0.5.1",
+    "jsdoc": "^3.3.3",
     "jshint-stylish": "^2.0.1",
     "microtime": "^2.0.0"
   }
