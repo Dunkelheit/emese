@@ -1,5 +1,12 @@
 'use strict';
 
+var api = require('../api');
+
 module.exports = {
-    foo: 'bar'
+    search: function () {
+        return api.transformer.recipes.transformRecipeList();
+    },
+    getDetails: function () {
+        return api.transformer.recipes.transformRecipeDetails();
+    }
 };

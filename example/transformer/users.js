@@ -1,5 +1,19 @@
 'use strict';
 
 module.exports = {
-    foo: 'bar'
+    login: function () {
+        return {};
+    },
+    logout: function () {
+        return {};
+    },
+    register: function () {
+        return {};
+    },
+    getProfile: function () {
+        return {};
+    },
+    updateProfile: function () {
+        return {};
+    }
 };

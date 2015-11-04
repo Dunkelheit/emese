@@ -1,5 +1,7 @@
 'use strict';
 
 module.exports = {
-    foo: 'bar'
+    exec: function () {
+        return {};
+    }
 };

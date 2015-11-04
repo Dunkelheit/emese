@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-    load: function (done) {
+    serve: function (done) {
         console.log('Creating HTTP server');
         setTimeout(function () {
             console.log('HTTP server listening');

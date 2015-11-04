@@ -1,5 +1,10 @@
 'use strict';
 
 module.exports = {
-    foo: 'bar'
+    transformRecipeList: function () {
+        return [];
+    },
+    transformRecipeDetails: function () {
+        return {};
+    }
 };

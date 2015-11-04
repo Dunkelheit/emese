@@ -34,14 +34,10 @@ loader.addTask([
         }, 150);
     },
     function (next) {
-        api.log('Initializing cache');
-        setTimeout(function () {
-            api.log('Cache initialized');
-            next();
-        }, 200);
+        api.plugin.cache.connect(next);
     },
     function (next) {
-        api.plugin.server.load(next);
+        api.plugin.server.serve(next);
     }
 ]);
 
