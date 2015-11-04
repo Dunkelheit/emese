@@ -21,7 +21,8 @@
   "homepage": "https://github.com/Dunkelheit/emese",
   "dependencies": {
     "async": "^1.5.0",
-    "glob": "^5.0.15"
+    "glob": "^5.0.15",
+    "lodash.assign": "^3.2.0"
   },
   "devDependencies": {
     "benchmark": "^1.0.0",

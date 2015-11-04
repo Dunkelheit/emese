@@ -8,9 +8,9 @@ module.exports = {
         return {};
     },
     connect: function (done) {
-        console.log('Connecting to cache');
+        //console.log('Connecting to cache');
         setTimeout(function () {
-            console.log('Connected to cache');
+            //console.log('Connected to cache');
             done();
         }, 80);
     }
