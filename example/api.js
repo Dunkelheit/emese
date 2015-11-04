@@ -48,6 +48,10 @@ loader.resources({
 
 loader.load();
 
+loader.on('resourceLoaded', function (file) {
+    api.log('Loaded \'' + file.file + '\'');
+});
+
 loader.on('error', function (err) {
     api.log('ERROR!');
     api.log(err);
